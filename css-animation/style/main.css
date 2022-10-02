@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 110px;
+    width: 100%;
+    background-color: rgb(215, 184, 243);
+    position: fixed;
+}
+
+.ball{
+    height: 100px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.shoe{
+    height: 110px;
+    margin-left: 40px;
+}
+
+.anime .ball{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: mymove 6s infinite;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+    
+    0% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+      }
+      50% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+      60% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+      70% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+      80% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+      90% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+      
+      100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+  }
+
+ul{
+    display: inline-flex;
+    float: right;
+    transform: translateY(-130%);
+    margin-right: 30px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    height: 55px;
+}
+
+li{
+    color: #fff;
+    margin: 0 90px 0 10px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 45px;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(47, 0, 90);
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: rgb(175, 113, 233);
+}
